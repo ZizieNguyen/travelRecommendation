@@ -4,7 +4,7 @@ function searchCondition() {
     const resultsGrid = document.getElementById('resultsGrid');
     const noResults = document.getElementById('noResults');
 
-    fetch('./travel.json')
+    fetch('./travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
             let results = [];
